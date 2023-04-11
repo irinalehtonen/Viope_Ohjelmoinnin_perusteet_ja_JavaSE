@@ -1,0 +1,7 @@
+/* Osa koodista tehtävässä */
+
+	private static void int laske(int luku) {
+		int vastaus;
+		
+		System.out.println("Luvun " +luku+ " kertotaulu: ");
+	}
