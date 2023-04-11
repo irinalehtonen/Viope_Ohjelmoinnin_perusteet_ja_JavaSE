@@ -1,0 +1,30 @@
+/* Osa koodista tehtävässä */
+
+	private static int pienin(int luku1, int luku2, int luku3) {
+		int pienin;
+		if ( luku1 < luku2 && luku1 < luku3) {
+		pienin = luku1;
+		return pienin;
+		}
+		if (luku2 < luku3 && luku2 < luku1) {
+		pienin = luku2;
+		return pienin;
+		} else
+		return luku3;
+	}
+	
+	private static int suurin(int luku1, int luku2, int luku3) {
+		int suurin;
+		if ( luku1 > luku2 && luku1 > luku3) {
+		suurin = luku1;
+		return suurin;
+		}
+		if (luku2 > luku3 && luku2 > luku1) {
+		suurin = luku2;
+		return suurin;
+		} else
+		return luku3;
+
+}
+  
+
