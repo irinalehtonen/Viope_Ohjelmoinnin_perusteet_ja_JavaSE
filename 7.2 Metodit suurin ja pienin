@@ -1,5 +1,28 @@
-/* Osa koodista tehtävässä */
+import java.util.Scanner;
 
+public class SuurinPienin {
+    public static void main(String[] args) {
+        int luku1, luku2, luku3, suurin, pienin;
+        Scanner lukija = new Scanner(System.in);
+
+        System.out.print("Syötä ensimmäinen kokonaisluku: ");
+        luku1 = lukija.nextInt();
+
+        System.out.print("Syötä toinen kokonaisluku: ");
+        luku2 = lukija.nextInt();
+
+        System.out.print("Syötä kolmas kokonaisluku: ");
+        luku3 = lukija.nextInt();
+
+        suurin = suurin(luku1, luku2, luku3);
+        pienin = pienin(luku1, luku2, luku3);
+
+        System.out.print("Syöttämistäsi luvuista suurin oli " + suurin);
+        System.out.print(" ja pienin " + pienin + "\n");
+    }
+
+    //  Tähän oma koodi
+    
 	private static int pienin(int luku1, int luku2, int luku3) {
 		int pienin;
 		if ( luku1 < luku2 && luku1 < luku3) {
@@ -24,6 +47,10 @@
 		return suurin;
 		} else
 		return luku3;
+
+}
+  
+// Tähän loppui oma koodi
 
 }
   
