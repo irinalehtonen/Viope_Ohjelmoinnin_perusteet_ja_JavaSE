@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class KysyNimi {
+	public static void main(String[] args) {
+ 		String etunimi,  sukunimi;
+		int ikä;
+		
+		Scanner lukija = new Scanner(System.in);
+ 
+		System.out.print("Anna sukunimi: ");
+		sukunimi = lukija.nextLine();
+		
+		System.out.print("Anna etunimi: ");
+		etunimi = lukija.nextLine();
+		
+		System.out.print("Anna ikä: ");
+		ikä = lukija.nextInt();
+		
+		System.out.print("Olet " + (etunimi + sukunimi) + " ja ikäsi on " + ikä);
+
+	}
+}
