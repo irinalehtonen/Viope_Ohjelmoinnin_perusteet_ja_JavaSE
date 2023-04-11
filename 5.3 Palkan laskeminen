@@ -1,0 +1,30 @@
+import java.util.Scanner;
+ 
+public class Palkanlaskenta {
+	public static void main(String[] args) {
+		double tunnit = 0, tuntipalkka = 0, veroprosentti = 0, palkka, verot;
+ 
+		Scanner lukija = new Scanner(System.in);
+ 
+		System.out.print("Anna tehtyjen työtuntien määrä: ");
+		tunnit = lukija.nextDouble();
+ 
+		System.out.print("Anna tuntipalkka: ");
+		tuntipalkka = lukija.nextDouble();
+		
+		System.out.print("Anna veroprosentti: ");
+		veroprosentti = lukija.nextDouble();
+		
+		
+		palkka = tunnit * tuntipalkka;
+		System.out.println("Palkka ilman veroja: " + palkka);
+		
+		verot = (tunnit * tuntipalkka * veroprosentti / 100);
+		System.out.println("Veron osuus palkasta: " + verot);
+		
+		
+		System.out.print("Palkka verojen jälkeen: " + (palkka - verot));
+ 
+		
+	}
+}
