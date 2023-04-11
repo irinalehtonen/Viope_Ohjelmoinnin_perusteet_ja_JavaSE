@@ -1,0 +1,13 @@
+/* Osa koodista tehtävässä */
+
+	private static void tervehdi() {
+    	System.out.println("Terve!");
+	}
+	
+	private static void tervehdi(String ekaNimi) {
+		System.out.println("Terve, " +ekaNimi);
+	}
+	
+	private static void tervehdi(String ekaNimi, String tokaNimi) {
+		System.out.println("Terve, " + ekaNimi + " ja " + tokaNimi);
+	}
