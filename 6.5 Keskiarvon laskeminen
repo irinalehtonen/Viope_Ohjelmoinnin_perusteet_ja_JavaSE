@@ -1,0 +1,37 @@
+import java.util.Scanner;
+ 
+public class Keskiarvo {
+	public static void main(String[] args) {
+		
+		System.out.print("Ohjelma laskee syötettyjen arvosanojen keskiarvon.\nLopetus negatiivisella kokonaisluvulla.\n");
+		
+		Scanner lukija = new Scanner(System.in);
+        int lkm = 0;
+		double summa = 0, arvosana, keskiarvo;
+		
+		do {
+			System.out.print("Anna arvosana (4-10): "); 
+			arvosana = lukija.nextDouble();
+		
+			if (arvosana > 3 && arvosana < 11) {
+				summa = summa + arvosana;
+				lkm = lkm + 1;
+			}
+			else if(arvosana < 4 && arvosana > 0) {
+				System.out.print("Antamasi arvosana ei kelpaa!\n");
+			}
+		} while(arvosana > 0);
+		
+		if (lkm < 1) {
+			System.out.print("Et antanut yhtään arvosanaa.");
+			}
+			 
+		else {
+			System.out.print("\nSyötetty " +lkm+  " arvosanaa.\n");
+			keskiarvo = (double)summa / lkm;
+			System.out.print("Arvosanojen keskiarvo: " +keskiarvo);
+		}
+		
+	}
+
+}
