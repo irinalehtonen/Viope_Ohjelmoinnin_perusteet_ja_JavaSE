@@ -1,0 +1,57 @@
+import java.util.Scanner;
+ 
+public class Laskenta {
+	public static void main(String[] args) {
+		
+		System.out.print("Käytössäsi on seuraavat laskutoimitukset:\n1:vähennyslasku\n2:yhteenlasku\n3:kertolasku\n4:jakolasku\n5:jakojäännös\n");
+		
+		Scanner lukija = new Scanner(System.in);
+        int summa, erotus, tulo, jakojäännös, laskutoimitus;
+		float osamäärä;
+		
+		System.out.print("Valitse laskutoimitus:\n"); 
+		laskutoimitus = lukija.nextInt();
+		
+		if (laskutoimitus < 1) {
+			System.out.print("Laskutoimituksen valinta pitää olla välillä 1-5.");
+		}
+		else if (laskutoimitus > 5) {
+			System.out.print("Laskutoimituksen valinta pitää olla välillä 1-5.");
+		}
+		else if (laskutoimitus >= 1 && laskutoimitus <= 5) {
+			
+			System.out.print("Anna ensimmäinen luku:");
+			int luku1 = lukija.nextInt();
+					
+			System.out.print("Anna toinen luku:\n");
+			int luku2 = lukija.nextInt();
+			
+			switch(laskutoimitus) {
+			case 1: 
+				erotus=luku1-luku2;
+				System.out.print("" +luku1+ "-" +luku2+ " = " +erotus);
+				break;
+					
+			case 2:
+				summa = luku1 + luku2;
+				System.out.print("" +luku1+ "+" +luku2+ " = " +summa);
+				break;
+					
+			case 3:
+				tulo=luku1*luku2;
+				System.out.print("" +luku1+ "*" +luku2+ " = " +tulo);
+				break;
+					
+			case 4:
+				osamäärä=(float)luku1/luku2;
+				System.out.print("" +luku1+ "/" +luku2+ " = " +osamäärä);
+				break;
+					
+			case 5:
+				jakojäännös=luku1%luku2;
+				System.out.print("" +luku1+ "%" +luku2+ " = " +jakojäännös);
+				break;
+			}
+		}	
+	}
+}
