@@ -1,0 +1,7 @@
+/* Osa koodista oli jo tehtävässä */ 
+
+		int kokonaisluku = -25;
+		char merkki = 'M';
+		String merkkijono = "Tämähän sujuu hienosti!";
+		boolean totuusarvo = true;
+		String alku = "Tässä on tekstin alku ";
