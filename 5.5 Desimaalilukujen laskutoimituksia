@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class DesimaaliLaskut {
+	public static void main(String[] args) {
+ 		Double luku1, luku2, tulo, osamäärä;
+		
+		Scanner lukija = new Scanner(System.in);
+ 
+		System.out.print("Anna ensimmäinen luku: ");
+		luku1 = lukija.nextDouble();
+		
+		System.out.print("Anna toinen luku: ");
+		luku2 = lukija.nextDouble();
+		
+		tulo = luku1 * luku2;
+		System.out.print("Kertolaskun tulos: " +tulo);
+		
+		osamäärä = luku1 / luku2;
+		System.out.print("Jakolaskun tulos: " +osamäärä);
+
+	}
+}
