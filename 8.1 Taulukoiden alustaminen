@@ -1,0 +1,32 @@
+/* 
+Alla oleva Java-ohjelma Taulukot tulostaa näytölle taulukoiden alkiot. 
+Sinun tehtävänä on kirjoittaa puuttuvat taulukoiden määrittelyt ja alustukset. 
+Ohjelman esimerkkitulosteesta näet, millä arvoilla taulukot pitää alustaa. */
+
+public class Taulukot {
+    public static void main(String[] args) {
+        // Tähän tuli omat koodit 
+		  int[] lukuTaulukko = {4, 7, 8, 2, 8, 3, 7, 1 };
+		  String[] nimiTaulukko = {"Matti", "Pekka", "Tiina", "Suvi"};
+		  int[][] matriisi = {{2}, {4,6}, {8,10,12}, {14,16}, {18}};
+      // Tähän loppui oma koodi
+ 
+        System.out.print("Taulukossa olevat numerot: ");
+        for(int i = 0; i < lukuTaulukko.length; i++) {
+            System.out.print(lukuTaulukko[i] + " ");    
+        }
+     
+        System.out.print("\n\nTaulukossa olevat nimet: ");
+        for(int i = 0; i < nimiTaulukko.length; i++) {
+            System.out.print(nimiTaulukko[i] + " ");    
+        }
+
+        System.out.println("\n\nMatriisin alkiot: ");
+        for(int i = 0; i < matriisi.length; i++) { 
+            for(int j = 0; j < matriisi[i].length; j++) {   
+                System.out.print(matriisi[i][j] + " ");
+            }
+            System.out.println("\t");    
+        }
+    }    
+} 
