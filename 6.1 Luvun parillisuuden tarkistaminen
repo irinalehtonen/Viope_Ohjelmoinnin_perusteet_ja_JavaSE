@@ -1,0 +1,20 @@
+import java.util.Scanner;
+ 
+public class Parillisuus {
+	public static void main(String[] args) {
+		
+		Scanner lukija = new Scanner(System.in);
+        
+		System.out.print("Anna kokonaisluku: ");
+		int kokonaisluku = lukija.nextInt();
+        
+		if(kokonaisluku % 2 == 0 && kokonaisluku > 0)
+				System.out.println("Luku " +kokonaisluku+ " on parillinen.");
+		
+		else if(kokonaisluku % 2 != 0 && kokonaisluku >0)
+ 				System.out.println("Luku " +kokonaisluku+ " on pariton.");
+		
+		else if(kokonaisluku <= 0)
+				System.out.println("Antamasi syöte ei ole kelvollinen!");
+	}
+}
