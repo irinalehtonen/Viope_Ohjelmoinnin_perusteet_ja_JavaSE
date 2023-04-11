@@ -1,0 +1,13 @@
+public class VirheellisetMuuttujat {
+    public static void main (String [] args) {
+        int luku = 2;
+        boolean totuusarvo = true;
+        char merkki = 'A';
+        String merkkijono = "Tämä on merkkijono";
+ 
+        System.out.println("Kokonaisluku: " + luku);
+        System.out.println("Totuusarvo: " + totuusarvo);
+        System.out.println("Merkki: " + merkki);
+        System.out.println("Merkkijono: " + merkkijono);
+    }
+}
